@@ -220,7 +220,7 @@ def VerifyUser():
         print("The user %d is macted, permission is %d"%(ID, permission))
 
         # Run the Linux command
-        subprocess.run(["sudo","systemctl","start","openhd","&&","sudo","start","systemctl","qopenhd"])
+        subprocess.run(["sudo","systemctl","start","openhd","&&","sudo","systemctl","start","qopenhd"])
 
         return ACK_SUCCESS
     elif rx[4] == ACK_TIMEOUT:
